@@ -36,11 +36,27 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.bluetooth.audio</name>
+        <version>2.1</version>
+        <interface>
+            <name>ISehBluetoothAudioProvidersFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.camera.provider</name>
         <version>4.0</version>
         <interface>
             <name>ISehCameraProvider</name>
             <instance>legacy/0</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.gnss</name>
+        <version>2</version>
+        <interface>
+            <name>ISehGnss</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -79,6 +95,14 @@
         <version>2.0</version>
         <interface>
             <name>ISehMiscPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.nfc</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehNfc</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -164,6 +188,14 @@
             <instance>epdgd2</instance>
             <instance>imsd</instance>
             <instance>imsd2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.security.vaultkeeper</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehVaultKeeper</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
