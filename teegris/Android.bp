@@ -6,7 +6,7 @@
 cc_binary {
     name: "hermesd",
     required: ["hermesd.rc"],
-    shared_libs: ["libteecl"],
+    shared_libs: ["libteecl_link_stub"],
     header_libs: ["libteecl_headers"],
     srcs: ["hermes.c"],
     vendor: true,
@@ -26,6 +26,9 @@ cc_library_headers {
 }
 
 cc_library_shared {
-    name: "libteecl",
+    name: "libteecl_link_stub",
+    stem: "libteecl",
+    srcs: ["teecl_stub.c"],
+    installable: false,
     vendor: true,
 }
